@@ -10,10 +10,33 @@ how to :ref:`installation` the project.
 
    This project is under active development.
 
-Contents
---------
 
 .. toctree::
+   introduction
+
+
+Contents
+------------
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: 目录：
 
    usage
    api
+
+
+Explanation
+------------
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: 目录：
+
+   structure/index
+   language/index
+   knowledge/index
+   symbolic/index
+   aiphysicist/index

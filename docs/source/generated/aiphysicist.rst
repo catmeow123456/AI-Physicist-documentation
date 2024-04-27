@@ -1,0 +1,23 @@
+﻿aiphysicist
+===========
+
+.. automodule:: aiphysicist
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
