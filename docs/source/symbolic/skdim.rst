@@ -1,2 +1,4 @@
-Intrinsic dimension 数据的内禀维度
+Intrinsic dimension 数据的本征维度
 ========================================
+
+参考 [skdim]_。

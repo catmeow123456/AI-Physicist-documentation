@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
+welcome to AI physicist Documentation
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+this documentation is built by `read the docs`
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+https://ai-physicist-documentation.readthedocs.io/zh-cn/latest/
