@@ -114,9 +114,14 @@ Gödel 的论文展示了定理证明、计算、人工智能、逻辑和数学�
 
 1940 年， Alonzo Church 基于 Lambda 演算提出了简单类型论（ simple type theory ） [typetheory]_。在类型论中，一切元素首先归属于某个类型，而后才能开始讨论其性质，
 由此可以解决 Russell 悖论。在类型论的观点下，一切数学对象（如整数，实数，群，拓扑空间）的含义都由它们从属的类型决定。
-例如函数 `λx. f x` 代表函数 `x ↦ f x`，如果 `x` 是类型 `s1` 的元素， `f x` 是类型 `s2` 的元素，那么函数 `x ↦ f x` 就是类型为
-`s1 → s2` 的元素。可以在这个类型论中加入更多的符号用来表达更复杂的数学对象，例如用 `∧` 表示且命题，用 `¬` 表示非命题，用 `∀` 表示全称量词等等。
-那么数学归纳法就可以被表达为 `∀(λP.P(0) ∧ ∀(λn.P(n) ⇒ P(S(n))) ⇒ ∀(λn.P(n)))`。
+例如函数 :math:`\lambda x. f x` 代表函数 :math:`x \mapsto f x`，如果 :math:`x` 是类型 :math:`s_1` 的元素， :math:`f x` 是类型 :math:`s_2` 的元素，
+那么函数 :math:`x \mapsto f x` 就是类型为 `s_1 \to s_2` 的元素。可以在这个类型论中加入更多的符号用来表达更复杂的数学对象，
+例如用归纳定义的 :math:`0,S(0),S(S(0)),\cdots` 表示自然数，用 :math:`\wedge` 表示且命题，:math:`\vee` 表示或命题，用 :math:`\neg` 表示非命题，用 :math:`∀` 表示全称量词等等。
+那么数学归纳法就可以被表达为 
+
+.. math::
+
+    \forall(\lambda P.P(0) \wedge \forall(\lambda n.P(n) \Rightarrow P(S(n))) \Rightarrow ∀(\lambda n.P(n)))
 
 人们依据这种形式系统, 
 写出了计算机程序 Isabelle（由 Lawrence C. Paulson 及其团队和 Tobias Nipkow 于 1986 完成），用计算机验证数学证明, 从而达到极高的准确性。

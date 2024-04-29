@@ -27,7 +27,7 @@ Contents
 .. toctree::
    :maxdepth: 2
    :numbered:
-   :caption: 目录：
+   :caption: Contents：
 
    usage
    api
@@ -39,7 +39,7 @@ Explanation
 .. toctree::
    :maxdepth: 2
    :numbered:
-   :caption: 目录：
+   :caption: Explanation：
 
    structure/index
    language/index
