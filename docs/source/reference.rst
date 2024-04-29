@@ -1,3 +1,7 @@
+.. [typetheory] Thierry Coquand,
+   *Type Theory. In: The Stanford Encyclopedia of Philosophy*,
+   `<https://plato.stanford.edu/entries/type-theory/>`_.
+
 .. [AIDescartes] Cristina Cornelio, Sanjeeb Dash, *et al.* (2021),
    *AI Descartes: Combining Data and Theory for Derivable Scientific Discovery*,
    `<https://arxiv.org/abs/2109.01634>`_.
@@ -10,8 +14,9 @@
     *Logical vs. Analogical or Symbolic vs. Connectionist or Neat vs. Scruffy*,
     `<https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist.html>`_.
  
-
-Marvin Minsky
+.. [godel] Jürgen Schmidhuber，(2021)
+    *1931: Kurt Gödel, founder of theoretical computer science, shows limits of math, logic, computing, and artificial intelligence*,
+    `<https://people.idsia.ch/~juergen/goedel-1931-founder-theoretical-computer-science-AI.html>`_.
 
 .. [AM]  G.D. Ritchie, F.K. Hanna (1984),
     *AM: A Case Study in AI Methodology*,
