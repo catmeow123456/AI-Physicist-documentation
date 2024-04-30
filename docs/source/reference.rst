@@ -1,4 +1,4 @@
-Reference 参考文献
+Reference
 =========================
 
 .. [typetheory] Thierry Coquand,
@@ -40,6 +40,10 @@ Reference 参考文献
 
 .. [diffalgbook]
     *Kolchin, E.R.: Differential Algebra and Algebraic Groups. Academic Press, New York (1973)*.
+
+.. [computediffalg]  李伟 (2019).
+    *计算微分代数引论课程主页*.
+    `<http://www.mmrc.iss.ac.cn/~weili/differentialalgebra.html>`_.
 
 .. [skdim]
     *A Python package for intrinsic dimension estimation*,
