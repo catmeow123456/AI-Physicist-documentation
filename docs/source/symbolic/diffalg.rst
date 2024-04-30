@@ -1,7 +1,8 @@
 Differential Algebra 微分代数
 ==============================
 
-参考 [rosenfeld]_。
+参考 [rosenfeld]_、[rosenfeldbook]_、[diffalgbook]_。
+
 如无特殊说明符号 :math:`\mathbb{K}` 代表特征为 :math:`0` 的域
 （例如有理数域 :math:`\mathbb{Q}` ，实数域 :math:`\mathbb{R}` ）。
 
@@ -132,12 +133,21 @@ A differential polynomial :math:`p`
 vanishes on every solution of :math:`\mathfrak{r}`, in any differential field extension of :math:`\mathbb{K}`,
 if and only if :math:`p \in \sqrt{\mathfrak{r}}`.
 
-rosenfeld groebner 算法实现了将微分理想 :math:`I` 表达为有限个微分素理想的交集 :math:`I_1 \cap I_2 \ldots \cap I_k`，
-每个微分素理想都被它的一组 differential groebner basis 表达，
-它被称作是正则微分链（regular differential chain），
+[rosenfeldbook]_ Rosenfeld Groebner 算法实现了将微分理想 :math:`I` 的根理想 :math:`\sqrt{I}` 
+分解为有限个正则微分链（regular differential chain）的交集：
+
+.. math::
+
+    \sqrt{I} = I_1 \cap I_2 \ldots \cap I_k
+
+每个正则微分链都被它的 associated groebner basis 表达。
+进一步地，可以用 primary decomposition 算法将每个正则微分链分解为微分素理想的交集（但不是很必要？）。
+（这个地方论文里描述有点复杂，还得再调查一下 regular decomposition 那一块）
+
 利用正则微分链，可以很方便地判断一条给定的微分方程是否出现在这个微分素理想 :math:`I_i` 当中。
-于是，对于微分方程 :math:`\mathrm{eq} = 0`，当且仅当 :math:`\forall i, \mathrm{eq} \in I_i`，
-:math:`\mathrm{eq}` 出现在微分理想 :math:`I` 当中。
+于是，对于微分方程 :math:`\mathrm{eq} = 0`，:math:`\mathrm{eq}` 出现在微分理想 :math:`\sqrt{I}` 中，
+当且仅当 :math:`\forall i, \mathrm{eq} \in I_i`。
+
 
 .. code-block:: python
     :emphasize-lines: 16,17

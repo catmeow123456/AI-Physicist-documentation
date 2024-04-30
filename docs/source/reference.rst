@@ -17,7 +17,7 @@ Reference 参考文献
     *Logical vs. Analogical or Symbolic vs. Connectionist or Neat vs. Scruffy*,
     `<https://web.media.mit.edu/~minsky/papers/SymbolicVs.Connectionist.html>`_.
  
-.. [godel] Jürgen Schmidhuber，(2021)
+.. [godel] Jürgen Schmidhuber, (2021)
     *1931: Kurt Gödel, founder of theoretical computer science, shows limits of math, logic, computing, and artificial intelligence*,
     `<https://people.idsia.ch/~juergen/goedel-1931-founder-theoretical-computer-science-AI.html>`_.
 
@@ -32,6 +32,11 @@ Reference 参考文献
 .. [rosenfeld]
     *A Groebner Method for Differential Algebra, implemented in Maple*,
     `RosenfeldGroebner <https://www.maplesoft.com/support/help/maple/view.aspx?path=DifferentialAlgebra/RosenfeldGroebner>`_.
+
+.. [rosenfeldbook] Boulier, F., Lazard, D., Ollivier, F. et al, (2009).
+    *Computing representations for radicals of finitely generated differential ideals*.
+    AAECC 20, 73–121 (2009).
+    `<https://doi.org/10.1007/s00200-009-0091-7>`_.
 
 .. [diffalgbook]
     *Kolchin, E.R.: Differential Algebra and Algebraic Groups. Academic Press, New York (1973)*.
