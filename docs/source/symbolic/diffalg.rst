@@ -68,7 +68,7 @@ glossary 术语表
     rho = sp.Function('rho')(x,y,z,t)
     eps0 = sp.Symbol('eps0')
     mu0 = sp.Symbol('mu0')
-    \mathrm{diffR} = DifferentialRing.default(
+    diffR = DifferentialRing.default(
         [eps0, mu0, Ex, Ey, Ez, Bx, By, Bz, Jx, Jy, Jz, rho]
     )
 
@@ -77,7 +77,7 @@ glossary 术语表
 对于微分多项式环 :math:`\mathrm{diffR} = \mathbb{K}[\Theta F]` 上的一个理想 :math:`I`，如果它对求导运算封闭，
 那么称 :math:`I` 是一个微分理想。
 
-取 :math:`\mathrm{diffR}` 的一个子集 :math:`A\subset \mathrm{diffR}`，我们记 :math:`[A]` 为由 `A` 生成的微分理想，
+取 :math:`\mathrm{diffR}` 的一个子集 :math:`A\subset \mathrm{diffR}`，我们记 :math:`[A]` 为由 :math:`A` 生成的微分理想，
 它是在 :math:`\mathrm{diffR}` 中包含 :math:`A` 的最小的微分理想。
 
 .. code-block:: python
@@ -143,7 +143,7 @@ rosenfeld groebner 算法实现了将微分理想 :math:`I` 表达为有限个�
     :emphasize-lines: 16,17
 
     import sympy as sp
-    from aiphysicist.diffalg.diffalg import DifferentialRing, diffalg
+    from aiphysicist.diffalg import DifferentialRing, diffalg
     t, mass1, mass2, P, E = sp.symbols('t mass1 mass2 P0 E0')
     x1 = sp.Function('x1')(t)
     x2 = sp.Function('x2')(t)
