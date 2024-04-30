@@ -116,7 +116,7 @@ Gödel 的论文展示了定理证明、计算、人工智能、逻辑和数学�
 由此可以解决 Russell 悖论。在类型论的观点下，一切数学对象（如整数，实数，群，拓扑空间）的含义都由它们从属的类型决定。
 例如函数 :math:`\lambda x. f x` 代表函数 :math:`x \mapsto f x`，如果 :math:`x` 是类型 :math:`s_1` 的元素， :math:`f x` 是类型 :math:`s_2` 的元素，
 那么函数 :math:`x \mapsto f x` 就是类型为 `s_1 \to s_2` 的元素。可以在这个类型论中加入更多的符号用来表达更复杂的数学对象，
-例如用归纳定义的 :math:`0,S(0),S(S(0)),\cdots` 表示自然数，用 :math:`\wedge` 表示且命题，:math:`\vee` 表示或命题，用 :math:`\neg` 表示非命题，用 :math:`∀` 表示全称量词等等。
+例如用归纳定义的 :math:`0,S(0),S(S(0)),\ldots` 表示自然数，用 :math:`\wedge` 表示且命题，:math:`\vee` 表示或命题，用 :math:`\neg` 表示非命题，用 :math:`∀` 表示全称量词等等。
 那么数学归纳法就可以被表达为 
 
 .. math::
@@ -148,6 +148,11 @@ Advancing mathematics by guiding human intuition with AI `<https://www.nature.co
 Alpha Geometry `<https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/>`_。
 研究者们还发起了 IMO Grand Challenge `<https://imo-grand-challenge.github.io/>`_，希望让AI拿到IMO金牌。
 
+
+MetaPhysics 元物理学（不确定要不要加这章，有点偏哲学）
+--------------------------------------------------------
+TODO
+https://mally.stanford.edu/
 
 Connectionism  联结主义人工智能
 ----------------------------------------------------

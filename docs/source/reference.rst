@@ -30,6 +30,9 @@
     *A Groebner Method for Differential Algebra, implemented in Maple*,
     `RosenfeldGroebner <https://www.maplesoft.com/support/help/maple/view.aspx?path=DifferentialAlgebra/RosenfeldGroebner>`_.
 
+.. [diffalgbook]
+    *Kolchin, E.R.: Differential Algebra and Algebraic Groups. Academic Press, New York (1973)*.
+
 .. [skdim]
     *A Python package for intrinsic dimension estimation*,
     `scikit-dimension <https://scikit-dimension.readthedocs.io/en/latest/>`_.
