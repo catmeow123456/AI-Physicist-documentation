@@ -70,7 +70,7 @@ differential polynomial ring 微分多项式环
 :math:`\mathbb{Q}` 也是一个特殊的微分域，因为所有的导子都将 :math:`\mathbb{Q}` 中的元素映射为 :math:`0`。
 
 而 :math:`z(t),v(t)` 和 :math:`g,v_0` 则是微分变元，而上述自由落体方程组可以看作微分多项式环
-`\mathbb{K}[g,v_0,z(t),v(t), \partial_t z(t), \partial_t v(t), \cdots]` 中的一个元素。
+:math:`\mathbb{K}[g,v_0,z(t),v(t), \partial_t z(t), \partial_t v(t), \cdots]` 中的一个元素。
 
 下面我们给出微分域与微分多项式环的具体定义：
 
@@ -87,7 +87,7 @@ differential polynomial ring 微分多项式环
 和莱布尼茨法则
 :math:`\forall a,b \in \mathbb{K}, \partial_i(ab) = a\partial_i(b) + b\partial_i(a)`，
 
-则将 :math:`\langle \mathbb{K}, \partial_{i}(1\le i\le m)\rangle`（下面直接简写为 :math:`\mathbb{K}`） 称为一个微分域。
+则将 :math:`\langle \mathbb{K}, \partial_{i}(1\le i\le m)\rangle` （下面直接简写为 :math:`\mathbb{K}` ） 称为一个微分域。
 
 **differential polynomial ring 微分多项式环**
 
@@ -174,7 +174,7 @@ True
 例如在方程 :math:`\partial_t x(t) + c\cdot x(t) = 0` 中，
 :math:`x(t)` 具有幂级数解 :math:`x(t) \propto \sum_{n=0}^{\infty} \frac{1}{n!} c^n t^n`，
 因此可以设置微分变元的解的范围 :math:`c\in \mathbb{R}, x(t) \in \mathbb{R}[[t]]` ，在这个范围中讨论这个微分方程的解。
-:math:`\mathbb{R}[[t - x]]` 代表关于在 :math:`x\in \mathbb{R}` 处的形式幂级数所构成的域。
+:math:`\mathbb{R}[[t - a]]` 代表关于在 :math:`a\in \mathbb{R}` 处的形式幂级数所构成的域。
 或者也可以在 :math:`c\in \mathbb{C}, x(t) \in \mathbb{C}((t))` 的范围内讨论微分方程的解。
 :math:`\mathbb{C}((t - z))` 代表关于在 :math:`z\in \mathbb{C}` 处的形式 Laurent 展开所构成的域。
 
