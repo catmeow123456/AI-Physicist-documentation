@@ -20,29 +20,28 @@ how to :ref:`installation` the project.
    introduction
    reference
 
-
-Contents
-------------
-
 .. toctree::
    :maxdepth: 2
    :numbered:
-   :caption: Contents：
+   :caption: Contents
 
    usage
    api
 
-
-Explanation
-------------
-
 .. toctree::
    :maxdepth: 2
    :numbered:
-   :caption: Explanation：
+   :caption: Explanation
 
    structure/index
    language/index
    knowledge/index
    symbolic/index
    aiphysicist/index
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: MileStone
+
+   milestone/index
