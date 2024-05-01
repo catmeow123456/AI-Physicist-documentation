@@ -198,13 +198,37 @@ True
 因此当我们想要知道微分方程组 :math:`p_1,\cdots, p_n` 的解是否一定满足微分方程 :math:`p_{n+1}` 时，只需要
 求出微分方程组所生成的根微分理想 :math:`\sqrt{[p_1,\cdots, p_n]}`，然后检查 :math:`p_{n+1}` 是否属于这个根理想即可。
 
+正则分解（regular decomposition）算法
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**ranking 变元排序**
+
+TODO
+
+如何在程序中定义 block order
+
+首导数（leading derivatives）
+
+初始系数（initials）
+
+分离项（separants）
+
+**regular differential chain 正则微分链**
+
+TODO
+
+微分三角化 (differential triangular)
+
+部分约化（partial reduced）
+
 **Rosenfeld Groebner 算法**
 
 [rosenfeldbook]_
 
 Rosenfeld Groebner 算法实现了将微分理想 :math:`I` 的根理想 :math:`\sqrt{I}` 
-分解为有限个正则微分理想 （regular differential ideal） 的交集，这一步被称为正则分解（regular decomposition）：
-（正则微分理想的定义： TODO）
+分解为有限个正则微分链 （regular differential chain） 所表达的理想
+（也被称为正则微分理想）的交集，
+这一步被称为正则分解（regular decomposition）：
 
 .. math::
 
@@ -215,12 +239,11 @@ Rosenfeld Groebner 算法实现了将微分理想 :math:`I` 的根理想 :math:`
 结果可能是冗余的，但它不妨碍我们利用这个分解来判断某一方程是否属于其根理想。
 
 进一步地，可以利用准素分解（primary decomposition）算法对每个正则微分理想作进一步的分解，
-我们可以得到 :math:`\sqrt{I}` 的一个微分素理想分解（这一分解仍然可能是冗余的）。
+我们可以得到 :math:`\sqrt{I}` 的一个微分素理想分解（这一分解仍然可能是冗余的），分解得到的
+微分素理想仍然可以用正则微分链表示。
 
-Rosenfeld Groebner 算法最终将每个正则微分理想用它的约化（reduced）groebner basis 表达，
-最终返回一个正则微分链 （regular differential chain） 的列表。
-
-因此根据 groebner basis 的性质，可以很方便地判断一条给定的微分方程是否出现这个微分理想 :math:`I_i` 当中。
+在 Rosenfeld Groebner 算法中，每个正则微分链伴随着一个约化的（reduced）groebner basis。
+根据 groebner basis 的性质，可以很方便地判断一条给定的微分方程是否出现这个微分理想 :math:`I_i` 当中。
 于是，对于微分方程 :math:`\mathrm{eq} = 0`，:math:`\mathrm{eq}` 属于根微分理想 :math:`\sqrt{I}`，
 当且仅当 :math:`\forall i, \mathrm{eq} \in I_i`。
 
