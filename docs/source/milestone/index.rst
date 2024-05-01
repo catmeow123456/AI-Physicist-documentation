@@ -1,6 +1,5 @@
 MileStone 里程碑
 =================
 
-发现能量守恒
-
-重新发现质量概念
+.. toctree::
+   aiphyhistory

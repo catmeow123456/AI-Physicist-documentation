@@ -93,7 +93,7 @@ differential polynomial ring 微分多项式环
 
 对于给定的导子 :math:`\partial_1, \partial_2, \ldots, \partial_m` 及相应的微分域 :math:`\mathbb{K}`，
 微分算子（derivation operator）是指具有形式 :math:`\theta = \partial_1^{a_1}\ldots \partial_n^{a_m}` 的算子，
-特别地，恒等映射 `\theta = \mathrm{id}` 是平凡的微分算子。
+特别地，恒等映射 :math:`\theta = \mathrm{id}` 是平凡的微分算子。
 
 给定微分变元（differential indeterminate） :math:`f_1, f_2, \ldots, f_n` （也就是物理学家所处理的函数），
 可以在微分变元前添加微分算子，得到的 :math:`\theta f` 项被称作是 :math:`f` 的导数（derivatives）。
