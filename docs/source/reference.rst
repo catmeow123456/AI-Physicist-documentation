@@ -26,9 +26,13 @@ Reference
     *1931: Kurt Gödel, founder of theoretical computer science, shows limits of math, logic, computing, and artificial intelligence*.
     `<https://people.idsia.ch/~juergen/goedel-1931-founder-theoretical-computer-science-AI.html>`_.
 
-.. [AM]  G.D. Ritchie, F.K. Hanna (1984).
-    *AM: A Case Study in AI Methodology*.
-    `<https://doi.org/10.1016/0004-3702(84)90015-8>`_.
+.. [AM] Douglas B. Lenat (1976).
+    *AM, an artificial intelligence approach to discovery in mathematics as heuristic search*.
+    `<https://api.semanticscholar.org/CorpusID:60603795>`_.
+
+.. [Eurisko] Douglas B. Lenat (1983), 
+    *Eurisko: A program that learns new heuristics and domain concepts: The nature of Heuristics III: Program design and results*,
+    `<https://doi.org/10.1016/S0004-3702(83)80005-8>`_.
 
 .. [heuretics] Douglas B. Lenat, (1982).
     *Heuretics: Theoretical and Experimental Study of Heuristic Rules*.

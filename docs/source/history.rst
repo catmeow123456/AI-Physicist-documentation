@@ -34,22 +34,77 @@ Symbolic AI  符号人工智能
 
 **Expert System 专家系统**
 
-1965 年左右，由 Edward Albert Feigenbaum 领导的斯坦福启发式编程项目（ The Heuristic Programming Project ，简称 HPP ）——
-the Dendral project，
-将符号主义人工智能的研究推向了一个新的高潮。HPP 项目的主要目标是：
-
+1965 年左右，以 Feigenbaum 领导的斯坦福启发式编程项目
+（ The Heuristic Programming Project，简称 HPP ）
+为开端，人工智能的研究走向了一个新的高潮。HPP 项目的主要目标是：
 
     ……对各种类型的科学问题以及科学和医学的各个领域中的科学推理过程的本质进行建模，从而获得深入的理解；
 
     ……作为方法论的一部分，并作为统筹活动，构建“专家系统”——在通常需要大量人类专业知识才能解决问题的任务上实现高水平性能的程序；因此 HPP 具有天然的应用导向。
 
-HPP 的研究员们将人工智能看作是知识的符号表示和符号推理的计算机科学，他们认为，为了让计算机能够作为智能助手充当大部分日常工作中人类专家的角色，
-计算机必须能够执行用详细的专业知识进行符号推理的任务， 为了接近这个目标， 研究员们提出了“专家系统”（ Expert system ）的概念。专家系统是模拟人类专家决策能力的计算机系统，它主要分为两个子系统：推理机和知识库——
-知识库代表事实和规则；推理机将规则应用于已知事实以推断出新事实。推理引擎还可以包括解释和调试能力。
+HPP 的研究员们将人工智能看作是知识的符号表示和符号推理的计算机科学，
+为了接近这个目标， 研究员们提出了“专家系统” （ Expert system ） 的概念。专家系统是模拟人类专家决策能力的计算机系统，它主要分为两个子系统：推理机和知识库——
+知识库代表事实和规则；推理机将规则应用于已知事实以推断出新事实。
 
-**Heuristic 启发式算法**
+1968 年，MIT 的 MAC（the Project on Mathematics and Computation）小组启动了计算机代数项目 Macsyma。
+Macsyma 可以看作是数学领域的专家系统，人们将大量数学知识以数据结构和算法的形式编码在知识库中，
+通过确定的规则让程序自动化地解决各种代数、微积分、线性代数、微分方程问题等。
+这一非常具有创新性的项目后来启发了 Maple、 Mathematica 等著名计算机代数系统的发展。
 
-（这个和 Expert System 以及 Discovery 有交叠？）
+除了在数学领域，人们还在生物、化学、医学、法律等众多领域开发了各种各样的专家系统。
+
+**Discovery Systems 发现系统**
+
+专家系统的繁荣标志着第二个人工智能的夏天到来，人们梦想着设计出试图发现新的科学概念或规律的人工智能系统，
+它被叫做“发现系统”（Discovery System）。
+理想情况下，发现系统应该能够提出有趣的科学概念，
+系统地在假设（也就是猜想）空间中搜索寻找概念之间可能存在的关系，
+并产生最能描述数据中复杂模式的猜想。
+
+    There exist too many combinations to consider all combinations of existing entities;
+    the creative mind must only propose those of potential interest.
+    —— Poincare
+
+1976 年，Lenat 发表了他有关 AI 数学家（Automated Mathematician，简称 AM） [AM]_ 的开创性工作，
+荣获两年一度的 IJCAI 计算机与思想奖。
+在 AM 程序中，最重要的是名为“概念”的数据结构和“启发式规则”（Heuristic）。
+从最初的数百个概念和启发式规则出发，AM 通过一个简单的控制流程，
+不断地生成新的概念，从而解决各种数学问题。
+AM 程序从集合论的第一原理出发，发现了偶数、乘法、素数等概念，并发现了算数基本定理以及哥德巴赫猜想；
+然后随着程序的持续运转，AM 发现的概念数量迅速膨胀产生大量无意义知识，
+而没能发现取模、指数等概念，因此 AM 程序没能在数论领域取得进一步突破。
+
+
+Lenat 随后投入了 Eurisko [Eurisko]_ 的开发，采用了一种名为 RLL-1 的表示语言，
+将 AM 的启发式搜寻概念的范式扩展到了单一的数学领域以外；
+Eurisko 所使用的启发式规则还包括了描述如何使用和更改启发式规则的规则 [heuretics]_，
+这使得 Eurisko 中启发式规则的创建和修改变得更加简单和灵活。
+Eurisko 被应用于许多领域并取得了惊人的成功，其中包括 VLSI 芯片设计。
+Lenat 在设计 Eurisko 程序时为编码领域知识耗费了巨大的精力，
+因此他决定构建一个全面的本体论和知识库。
+1984 年，Lenat 启动了 Cyc 项目，旨在以机器可用的形式编纂构成人类常识的数百万条知识，
+Cyc 项目对人工智能领域的本体论工程以及知识表示有着深远的影响。
+
+.. CYRANO
+.. 和目前 AI for math 的发展对比一下，目前的 AI for math 的工作过于关注数学的自动证明，而忽略了数学的发现过程。
+.. 这一发现过程——如何发现猜想以及如何发现新的数学概念——和 AI for physics 的精神是一致的。
+
+八十年代末期，专家系统计算机的市场崩溃了，伴随着人工智能的
+第二个冬天的到来，“专家系统”、“发现系统”等词语逐渐淡出了大部分人的视野。
+随后人工智能诞生了各种新的形态，以人工神经网络为代表的联结主义方法开始复兴，
+而在符号主义人工智能领域，形式化验证与自动推理研究逐渐兴起。
+
+近年来，发现系统再度进入人们的视野。2007 年，由 Schmidt 与他的导师 Lipson 一起开发的 Eureqa 软件
+使用遗传算法来搜索数学方程，从而找到描述数据集的最简单的形式（这种方法被称为符号回归）。
+在 2011 年 10 月版的《Physical Biology》中，Lipson 描述了一项酵母实验，该实验预测了七个已知方程。
+这项工作有效地证明了符号回归是人工智能驱动的科学发现的一个可行方向。
+21 世纪，AI 在科学发现领域的研究逐渐兴起人们给这一方向赋予了一个新的名词：AI for Science。
+除了在生物、化学、医药、材料等领域的迅速突破，一些研究者还开始尝试将 AI 应用于物理学领域，
+AI Feynman、 AI descarte [AIDescartes]_ 等项目在这个方向上取得了一些成果，人们开始期待着让
+AI 自动从数学中挖掘出物理公式，甚至提取出一般化的物理定律。
+
+
+**Heuristics 启发式方法**
 
 介绍一下遗传算法，启发式搜索。
 
@@ -60,33 +115,6 @@ Lenat, The Nature of Heuristics, 1982。
 Heuristic 和 Meta Heuristic 的概念
 
 TODO
-
-**Discovery Systems 发现系统**
-
-AI 如何去自己去发现知识，维护知识库？这个过程和物理学的研究精神是一致的。
-
-最早的一些实验：
-
-    **AM(1976)** [AM]_
-
-    There exist too many combinations to consider all combinations of existing entities;
-    the creative mind must only propose those of potential interest.
-    —— Poincare
-
-    **Eurisko**，是对 AM 的一个继承。这两篇都是 Lenat 的文章，代码网上找得到。
-    Lenat 在 1982 年以这两个 Discovery system 的工作为 case studies ，总结了一些启发式编程研究的思想 [heuretics]_。
-
-    CYRANO
-
-介绍一下 AM （ Automated Mathematicians ）的工作。引用一些 Lenat 论文里的话。
-介绍一下它提到的困难点。
-
-Cyc: 知识表示 ，本体论和知识库。（ 为了将这一工作推广到其他领域， Lenat 创立公司构建 Cyc 知识库。）
-点评几句。
-
-和目前 AI for math 的发展对比一下，目前的 AI for math 的工作过于关注数学的自动证明，而忽略了数学的发现过程。
-
-这一发现过程——如何发现猜想以及如何发现新的数学概念——和 AI for physics 的精神是一致的。
 
 
 [consciousness]_。
@@ -115,7 +143,7 @@ Gödel 的论文展示了定理证明、计算、人工智能、逻辑和数学�
 1940 年， Alonzo Church 基于 Lambda 演算提出了简单类型论（ simple type theory ） [typetheory]_。在类型论中，一切元素首先归属于某个类型，而后才能开始讨论其性质，
 由此可以解决 Russell 悖论。在类型论的观点下，一切数学对象（如整数，实数，群，拓扑空间）的含义都由它们从属的类型决定。
 例如函数 :math:`\lambda x. f x` 代表函数 :math:`x \mapsto f x`，如果 :math:`x` 是类型 :math:`s_1` 的元素， :math:`f x` 是类型 :math:`s_2` 的元素，
-那么函数 :math:`x \mapsto f x` 就是类型为 `s_1 \to s_2` 的元素。可以在这个类型论中加入更多的符号用来表达更复杂的数学对象，
+那么函数 :math:`x \mapsto f x` 就是类型为 :math:`s_1 \to s_2` 的元素。可以在这个类型论中加入更多的符号用来表达更复杂的数学对象，
 例如用归纳定义的 :math:`0,S(0),S(S(0)),\ldots` 表示自然数，用 :math:`\wedge` 表示且命题，:math:`\vee` 表示或命题，用 :math:`\neg` 表示非命题，用 :math:`\forall` 表示全称量词等等。
 那么数学归纳法就可以被表达为 
 
