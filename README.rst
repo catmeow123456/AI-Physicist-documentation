@@ -22,6 +22,7 @@ if you have installed `xelatex` , you can also build the pdf version of the docu
 running the following command:
 
 .. code-block:: console
+
     make latex
     cd build/latex && make all-pdf
 
