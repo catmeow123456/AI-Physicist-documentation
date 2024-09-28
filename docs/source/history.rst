@@ -109,6 +109,14 @@ Cyc 项目对人工智能领域的本体论工程以及知识表示有着深远�
 AI Feynman、 AI descarte [AIDescartes]_ 等项目在这个方向上取得了一些成果，人们开始期待着让
 AI 自动从数学中挖掘出物理公式，甚至提取出一般化的物理定律。
 
+TODO
+
+与 AI for Science 领域的符号回归方法对应的是 Program Synthesis 程序合成。
+一些人尝试让 AI 去学习合成一段程序来给出一个数列的通项公式，相关的工作有
+Learning Program Synthesis for Integer Sequences
+from Scratch `<https://arxiv.org/pdf/2202.11908>`_ ，相关的开源程序为 `<https://github.com/barakeel/oeis-synthesis.git>`_ ，
+其论文声称在不提供人工标注的数据的情况下，AI 通过 self-learning ，可以在 OEIS 数据集上发现 27987 个序列的通项公式。
+
 
 **Heuristics 启发式方法**
 
@@ -182,6 +190,8 @@ Lean 的社区的主要目标是构建一套完整的数学定理库（Mathlib�
 Advancing mathematics by guiding human intuition with AI `<https://www.nature.com/articles/s41586-021-04086-x>`_，
 Alpha Geometry `<https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/>`_。
 研究者们还发起了 IMO Grand Challenge `<https://imo-grand-challenge.github.io/>`_，希望让AI拿到IMO金牌。
+Deepmind 的 Alpha Proof 项目 `<https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/>`_ 
+在 IMO 的几道题目上取得了银牌水平的成绩（在代数与数论相关的问题上，AI 正确地写出了 Lean 的证明）。
 
 
 MetaPhysics 元物理学（不确定要不要加这章，有点偏哲学）
@@ -191,5 +201,12 @@ https://mally.stanford.edu/
 
 Connectionism  联结主义人工智能
 ----------------------------------------------------
+
+**Neural Networks 神经网络与反向传播**
+
+**LLM 大语言模型**
+
+**Reinforcement Learning 强化学习**
+
 TODO
 
