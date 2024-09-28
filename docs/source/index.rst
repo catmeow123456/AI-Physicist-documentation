@@ -19,6 +19,7 @@ how to :ref:`installation` the project.
 .. toctree::
    introduction
    history
+   joinus
    reference
 
 .. toctree::
