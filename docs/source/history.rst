@@ -109,7 +109,10 @@ Cyc 项目对人工智能领域的本体论工程以及知识表示有着深远�
 AI Feynman、 AI descarte [AIDescartes]_ 等项目在这个方向上取得了一些成果，人们开始期待着让
 AI 自动从数学中挖掘出物理公式，甚至提取出一般化的物理定律。
 
-TODO
+Miles Cranmer 及其团队在 2023 年开发 PySR `<https://astroautomata.com/PySR/>`_ ，
+这是一个用于符号回归的 Python 库。
+IBM 团队在 2024 年开发了 AI Hilbert `<https://ai-hilbert.github.io/>`_ ，该系统在具体物理问题中，自动发现数据所满足的物理定律，
+并基于一个计算代数几何的算法来做符号公式的验证和推理，判断公式是否与公理集合相容。
 
 与 AI for Science 领域的符号回归方法对应的是 Program Synthesis 程序合成。
 一些人尝试让 AI 去学习合成一段程序来给出一个数列的通项公式，相关的工作有
